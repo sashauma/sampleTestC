@@ -18,13 +18,19 @@ public class Calculator {
     }
 
     public int division(int a, int b) {
-
         return a/b;
     }
 
     public int subtraction(int a, int b) {
+        return a-b;
+    }
 
-        return a+b+Math.round(12);
+    public double squareRoot(int a) {
+        return Math.sqrt(a);
+    }
+
+    public double x2(int a) {
+        return Math.pow(a,2);
     }
 
     //TODO

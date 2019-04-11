@@ -28,6 +28,16 @@ public class AddTwoValuesTests {
         assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
     }
 
+    @Test
+    public void testMultiply() {
+        assertEquals("testmultiply", 9, calc.multiply(3, 3));
+    }
+
+    @Test
+    public void testDivision() {
+        assertEquals("testdivision", 3, calc.division(9, 3));
+    }
+
     //TODO
     //add new tests for add() method
 
