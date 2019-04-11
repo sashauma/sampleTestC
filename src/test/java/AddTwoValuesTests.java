@@ -38,15 +38,30 @@ public class AddTwoValuesTests {
         assertEquals("testdivision", 3, calc.division(9, 3));
     }
 
-    //TODO
-    //add new tests for add() method
+    @Test
+    public void testSquareRoot() {
+        assertEquals("testsquareRoot", 3.0, calc.squareRoot(9));
+    }
 
-    //TODO
-    //add tests for new methods
+    @Test
+    public void testX2() {
+        assertEquals("testsx2", 4.0, calc.x2(2));
+    }
+
+    @Test
+    public void testDivisionByZero() {
+        String message = "";
+        {
+            try {
+                calc.division(5, 0);
+            } catch (Exception e) {
+                message = e.getMessage();
+            }
+        }
+    }
 
     @After
-    public void consolePrintAfter() {
+    public void consolePrintAfter () {
         System.out.println("Tests finished!!!");
-
+        }
     }
-}
