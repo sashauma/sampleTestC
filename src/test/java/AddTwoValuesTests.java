@@ -34,6 +34,11 @@ public class AddTwoValuesTests {
     }
 
     @Test
+    public void testMultiplyByZero() {
+        assertEquals("testmultiply by zero", 0, calc.multiply(3, 0));
+    }
+
+    @Test
     public void testDivision() {
         assertEquals("testdivision", 3, calc.division(9, 3));
     }
