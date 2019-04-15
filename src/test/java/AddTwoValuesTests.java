@@ -58,6 +58,8 @@ public class AddTwoValuesTests {
                 message = e.getMessage();
             }
         }
+
+        assertEquals ("message report", "/ by zero", message);
     }
 
     @After
